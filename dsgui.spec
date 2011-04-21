@@ -1,22 +1,22 @@
 %define name	dsgui
 %define version	1.4.1
 %define unmangled_version	1.4.1
-%define release	1
-%include %{_rpmconfigdir}/macros.python
+%define release	%mkrel 1
 
 Summary:	dsgui is a free graphical interface for 'Datove schranky'
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source0:	%{name}-%{unmangled_version}.tar.gz
-License:	GNU LGPL
-Group:		Development/Libraries
+License:	LGPL
+Group:		Office
 BuildArch:	noarch
 Requires:	dslib >= 1.4.1 
 Requires:	pygtk2
 Requires:	python-reportlab
 Requires:	python-sqlalchemy
 URL:		http://labs.nic.cz/datove-schranky/
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 dsgui is a GUI application allowing access to a 'Databox' - an 
@@ -40,8 +40,8 @@ rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root,-)
-%dir %{py_sitedir}/%{name}*
-%{py_sitedir}/%{name}*/*
+%dir %{py_puresitedir}/%{name}*
+%{py_puresitedir}/%{name}*/*
 %{_bindir}/%{name}
 %dir %{_datadir}/%{name}
 %{_datadir}/%{name}/*
