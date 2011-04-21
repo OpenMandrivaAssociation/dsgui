@@ -13,6 +13,7 @@ Group:		Office
 BuildArch:	noarch
 Requires:	dslib >= 1.4.1 
 BuildRequires:	python
+BuildRequires:  python-setuptools
 Requires:	pygtk2
 Requires:	python-reportlab
 Requires:	python-sqlalchemy
