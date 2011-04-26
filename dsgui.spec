@@ -1,12 +1,9 @@
-%define name	dsgui
-%define version	1.4.1
 %define unmangled_version	1.4.1
-%define release	%mkrel 1
 
 Summary:	dsgui is a free graphical interface for 'Datove schranky'
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		dsgui
+Version:	1.4.1
+Release:	%mkrel 2
 Source0:	%{name}-%{unmangled_version}.tar.gz
 License:	LGPL
 Group:		Office
