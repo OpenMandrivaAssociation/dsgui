@@ -1,16 +1,16 @@
-%define unmangled_version	1.4.1
+%define unmangled_version	1.5
 
 Summary:	dsgui is a free graphical interface for 'Datove schranky'
 Name:		dsgui
-Version:	1.4.1
-Release:	%mkrel 2
+Version:	1.5
+Release:	%mkrel 1
 Source0:	%{name}-%{unmangled_version}.tar.gz
 License:	LGPL
 Group:		Office
 BuildArch:	noarch
-Requires:	dslib >= 1.4.1 
+Requires:	dslib >= 1.5
 BuildRequires:	python
-BuildRequires:  python-setuptools
+BuildRequires:	python-setuptools
 Requires:	pygtk2
 Requires:	python-reportlab
 Requires:	python-sqlalchemy
@@ -46,5 +46,3 @@ rm -rf %{buildroot}
 %{_datadir}/%{name}/*
 %{_datadir}/applications/%{name}*
 %{_datadir}/icons/hicolor/*/apps/%{name}*
-
-
