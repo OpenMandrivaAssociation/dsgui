@@ -1,10 +1,8 @@
-%define unmangled_version	1.5
-
 Summary:	dsgui is a free graphical interface for 'Datove schranky'
 Name:		dsgui
-Version:	1.5
+Version:	1.5.1
 Release:	%mkrel 1
-Source0:	%{name}-%{unmangled_version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 License:	LGPL
 Group:		Office
 BuildArch:	noarch
@@ -22,7 +20,7 @@ dsgui is a GUI application allowing access to a 'Databox' - an
 electronic communication interface endorsed by the Czech government.
 
 %prep
-%setup -n %{name}-%{unmangled_version} -n %{name}-%{unmangled_version} -q
+%setup -n %{name}-%{version} -n %{name}-%{version} -q
 
 %build
 python setup.py build
