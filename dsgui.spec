@@ -1,12 +1,12 @@
 Summary:	dsgui is a free graphical interface for 'Datove schranky'
 Name:		dsgui
-Version:	1.5.1
+Version:	1.6.2
 Release:	%mkrel 1
 Source0:	%{name}-%{version}.tar.gz
 License:	LGPL
 Group:		Office
 BuildArch:	noarch
-Requires:	dslib >= 1.5
+Requires:	dslib >= 1.6
 BuildRequires:	python
 BuildRequires:	python-setuptools
 Requires:	pygtk2
@@ -21,6 +21,7 @@ electronic communication interface endorsed by the Czech government.
 
 %prep
 %setup -n %{name}-%{version} -n %{name}-%{version} -q
+sed -i 's/Office/Office;/g' dsgui.desktop
 
 %build
 python setup.py build
