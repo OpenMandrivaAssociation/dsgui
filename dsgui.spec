@@ -1,6 +1,6 @@
 Summary:	dsgui is a free graphical interface for 'Datove schranky'
 Name:		dsgui
-Version:	1.6.2
+Version:	1.6.3
 Release:	%mkrel 1
 Source0:	%{name}-%{version}.tar.gz
 License:	LGPL
