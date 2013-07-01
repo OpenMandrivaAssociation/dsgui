@@ -1,4 +1,4 @@
-Summary:	dsgui is a free graphical interface for 'Datove schranky'
+Summary:	Free graphical interface for 'Datove schranky'
 Name:		dsgui
 Version:	1.6.3
 %define subrel	1
