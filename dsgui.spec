@@ -2,7 +2,7 @@ Summary:	Free graphical interface for 'Datove schranky'
 Name:		dsgui
 Version:	1.6.3
 %define subrel	1
-Release:	%mkrel 0
+Release:	1
 Source0:	%{name}-%{version}.tar.gz
 License:	LGPL
 Group:		Office
@@ -14,7 +14,6 @@ Requires:	pygtk2
 Requires:	python-reportlab
 Requires:	python-sqlalchemy
 URL:		http://labs.nic.cz/datove-schranky/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 dsgui is a GUI application allowing access to a 'Databox' - an 
@@ -28,14 +27,12 @@ sed -i 's/Office/Office;/g' dsgui.desktop
 python setup.py build
 
 %install
-rm -rf %{buildroot}
 python setup.py install --single-version-externally-managed \
 	--root=%{buildroot} 
 
 %find_lang %{name}
 
 %clean
-rm -rf %{buildroot}
 
 %files -f %{name}.lang
 %defattr(-,root,root,-)
