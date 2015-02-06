@@ -2,7 +2,7 @@ Summary:	Free graphical interface for 'Datove schranky'
 Name:		dsgui
 Version:	1.6.3
 %define subrel	1
-Release:	1
+Release:	2
 Source0:	%{name}-%{version}.tar.gz
 License:	LGPL
 Group:		Office
