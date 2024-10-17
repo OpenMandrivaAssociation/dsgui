@@ -13,7 +13,7 @@ BuildRequires:	python-setuptools
 Requires:	pygtk2
 Requires:	python-reportlab
 Requires:	python-sqlalchemy
-URL:		http://labs.nic.cz/datove-schranky/
+URL:		https://labs.nic.cz/datove-schranky/
 
 %description
 dsgui is a GUI application allowing access to a 'Databox' - an 
